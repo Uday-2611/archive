@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Archive
 
-## Getting Started
+Archive is a digital memory and social curation platform where users can save anything from the web, organize it into folders, and share curated collections.
 
-First, run the development server:
+The product is designed to combine personal knowledge management (save and organize) with social discovery (follow curators, explore collections).
+
+## What This Project Includes
+
+- Next.js app with App Router and TypeScript
+- Clerk authentication wired into the root layout
+- Convex schema for users, folders, items, collections, follows, likes, comments, notifications, and billing events
+- Tailwind CSS and shadcn-based UI foundation
+- Product and architecture documentation in the docs folder
+
+## Current Status
+
+This repository is in active setup/foundation stage:
+
+- Core stack and project structure are in place
+- Convex data model is defined
+- Main product flows are documented
+- Most feature routes and Convex functions are still to be implemented
+
+## Tech Stack
+
+- Frontend: Next.js, React, TypeScript, Tailwind CSS
+- Auth: Clerk
+- Backend and database: Convex
+- Media: Cloudinary
+- UI primitives/components: Radix and shadcn
+
+## Local Development
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Documentation
 
-## Learn More
+See the docs folder for full planning and architecture details:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Product requirements and goals
+- App flow and user journeys
+- Frontend design guidelines
+- Backend schema design
+- Security and implementation roadmap
